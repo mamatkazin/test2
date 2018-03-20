@@ -1,0 +1,5 @@
+.b-tree-card__date {
+	display: table-cell;
+	text-align: right;
+	font-weight: bold;
+}

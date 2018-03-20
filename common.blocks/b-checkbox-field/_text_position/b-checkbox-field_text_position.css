@@ -1,0 +1,8 @@
+.b-checkbox-field_text_position {
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 540px;
+    height: 26px;
+    margin-bottom: 8px;	
+}

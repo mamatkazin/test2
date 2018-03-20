@@ -1,0 +1,9 @@
+.b-task-timesheet {
+	width: 100%;
+    margin-bottom: 80px;
+}
+
+.b-task-timesheet td {
+    word-break: break-all;
+    vertical-align: middle;
+}

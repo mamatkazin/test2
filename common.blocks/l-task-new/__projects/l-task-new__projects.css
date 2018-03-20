@@ -1,0 +1,22 @@
+.l-task-new__projects {
+    float: left;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+
+.l-task-new__projects label {
+    width: 97px;
+}
+
+.l-task-new__projects .t-patterns__combobox {
+    display: table-cell;
+}
+
+.l-task-new__projects {
+    width: 388px;
+}
+
+.l-task-new__projects button input{
+    width: 258px;
+    height: 20px;
+}

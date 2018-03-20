@@ -1,0 +1,13 @@
+.b-combobox__text{
+	padding-left: 8px;
+	display: table-cell;
+	text-align: left;
+	float: left;
+}
+
+.__text{
+	padding-left: 8px;
+	display: table-cell;
+	text-align: left;
+	float: left;
+}

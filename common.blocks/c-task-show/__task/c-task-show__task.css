@@ -1,0 +1,8 @@
+.c-task-show__task {
+    background-color: #ffffe0;
+}
+
+.c-task-show__task h3 {
+    text-align: right;
+    margin-right: 8px;
+}

@@ -1,0 +1,9 @@
+.c-life-cycle__text {
+	height: 38px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: -24px;
+}

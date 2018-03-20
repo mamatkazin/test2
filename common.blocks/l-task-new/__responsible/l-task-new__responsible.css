@@ -1,0 +1,12 @@
+.l-task-new__responsible {
+    width: 304px;
+}
+
+.l-task-new__responsible .t-patterns__combobox {
+    display: table-cell;
+}
+
+.l-task-new__responsible button input {
+    width: 168px;
+    height: 20px;
+}

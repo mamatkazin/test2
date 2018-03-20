@@ -1,0 +1,10 @@
+.b-task-timesheet__pname {
+	width: 600px;
+	min-width: 600px;
+	max-width: 600px;
+	
+}
+
+.b-task-timesheet-pname {
+	vertical-align: middle !important;
+}

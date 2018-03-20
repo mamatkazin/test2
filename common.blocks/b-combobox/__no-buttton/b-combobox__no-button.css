@@ -1,0 +1,7 @@
+.b-combobox__no-button {
+    min-height: 36px;
+}
+
+.b-combobox__no-button input {
+    text-align: center;
+}

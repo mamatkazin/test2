@@ -1,0 +1,31 @@
+.l-new-process-cb-projects {
+	width: 400px;
+	margin-right: 16px;
+	float: left;
+	display: table;
+}
+
+.l-new-process-cb-projects label {
+	text-align: right;
+	padding-right: 8px;
+	display: table-cell;
+	vertical-align: middle;
+	width: 116px;
+}
+
+.l-new-process-cb-projects .b-combobox {
+	display: table-cell;
+	width: 284px;
+}
+
+.l-new-process-cb-projects .b-combobox button {
+	width: 284px;
+}
+
+.l-new-process-cb-projects .b-combobox__text {
+	white-space: nowrap; /* Запрещаем перенос строк */
+	overflow: hidden; /* Обрезаем все, что не помещается в область */
+	text-overflow: ellipsis; /* Добавляем многоточие */
+	width: 250px;
+	float: left;
+}

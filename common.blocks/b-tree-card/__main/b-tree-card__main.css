@@ -1,0 +1,7 @@
+.b-tree-card__main {
+	min-height: 34px;
+	padding: 0 8px !important;
+    text-align: left;
+    word-break: break-all;
+    white-space: pre-wrap;
+}

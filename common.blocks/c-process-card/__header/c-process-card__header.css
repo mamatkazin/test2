@@ -1,0 +1,7 @@
+.c-process-card__header {
+	border-bottom: 1px solid #fed22f;
+	height: 22px;
+	padding: 3px 8px 0 8px;
+	display: table;
+	width: 100%;
+}

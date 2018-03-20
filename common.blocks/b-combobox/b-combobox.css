@@ -1,0 +1,15 @@
+.b-combobox {
+	position: relative;
+/*	width: inherit;*/
+}
+
+.b-combobox button {
+	padding: 0 0;
+/*	display: table;*/
+	width: 100%;
+/*    table-layout: auto;*/
+}
+
+.b-combobox button:hover, .b-combobox button:focus {
+	background-color: transparent !important;
+}

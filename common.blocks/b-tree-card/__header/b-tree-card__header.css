@@ -1,0 +1,5 @@
+.b-tree-card__header {
+	border-bottom: 1px solid #fed22f;
+	padding: 0 8px !important;
+    text-align: left;
+}

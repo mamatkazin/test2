@@ -1,0 +1,5 @@
+.b-textarea-field__name {
+    display: table-cell;
+    background-color: #fff !important;
+    width: 100% !important;
+}

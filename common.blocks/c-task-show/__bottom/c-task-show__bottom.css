@@ -1,0 +1,7 @@
+.c-task-show__bottom {
+    display: table;
+    table-layout: auto;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 50px;
+}

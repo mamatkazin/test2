@@ -1,0 +1,64 @@
+._tooltip {
+    position: relative;
+}
+
+._tooltip span:last-child {
+    margin-left: -9999em;
+       position: absolute;
+/*          color: white;*/
+}
+
+._tooltip:hover span:last-child  {
+    border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; 
+       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+         position: absolute; 
+              top: 36px; 
+          z-index: 99;
+      margin-left: 0; 
+          display: table;
+            width: 300px;
+}
+
+.b-tree-card._tooltip:hover span:last-child  {
+    top: 90px; 
+    left: 50px;
+}
+
+._tooltip:hover span:last-child img {
+      border: 0; 
+      margin: -18px 0 0 -30px;
+       float: left;
+}
+
+._tooltip:hover span:last-child em {
+      font-size: 24px; 
+    font-weight: bold;
+        display: block; 
+        margin-left: 24px;
+        text-align: left;
+}
+
+._tooltip:hover span:last-child p {
+/*    margin-top: 16px;*/
+    font-size: 12px; 
+    white-space: pre-wrap;
+    text-align: left;
+    padding: 0 8px;
+    margin: 0;
+}
+
+.classic { padding: 8px; }
+.custom { padding: 8px; }
+/** html a:hover { background: transparent; }*/
+.classic {background: #FFFFAA; border: 1px solid #FFAD33; }
+.critical { background: #FFCCAA; border: 1px solid #FF3334;    }
+.help { background: #ddd; border: 1px solid #c0c0c0;    }
+.warning { background: #FFFFAA; border: 1px solid #FFAD33; }
+
+._tooltip-l:hover span:last-child  {
+  left: 0;
+}
+
+._tooltip-r:hover span:last-child  {
+  left: 60%;
+}

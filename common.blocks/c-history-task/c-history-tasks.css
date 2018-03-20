@@ -1,0 +1,39 @@
+.c-history-tasks .table>thead>tr>th {
+    text-align: center;
+}
+
+.c-history-tasks .table {
+    margin-bottom: 0px;
+} 
+
+.c-history-tasks th:nth-child(1) {
+    width: 128px;
+}
+
+.c-history-tasks th:nth-child(2) {
+    width: 150px;
+}
+
+.c-history-tasks th:nth-child(3) {
+    width: 160px;
+}
+
+.c-history-tasks th:nth-child(4) {
+    width: 213px;
+}
+
+.c-history-tasks td:nth-child(1) {
+    width: 128px;
+}
+
+.c-history-tasks td:nth-child(2) {
+    width: 150px;
+}
+
+.c-history-tasks td:nth-child(3) {
+    width: 160px;
+}
+
+.c-history-tasks td:nth-child(4) {
+    width: 213px;
+}

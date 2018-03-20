@@ -1,0 +1,6 @@
+.c-task-show__bottom-left {
+    display: table-cell;
+    padding: 8px;
+    border-right: 1px solid silver;
+    vertical-align: top;
+}

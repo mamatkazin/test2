@@ -1,0 +1,8 @@
+.c-task-show__informers {
+    background-color: #ffffe0;
+}
+
+.c-task-show__informers h3 {
+    text-align: right;
+    margin-right: 8px;
+}

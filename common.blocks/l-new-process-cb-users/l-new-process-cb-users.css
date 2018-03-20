@@ -1,0 +1,30 @@
+.l-new-process-cb-users {
+	width: 288px;
+	float: left;
+	display: table;
+}
+
+.l-new-process-cb-users label {
+	text-align: right;
+	padding-right: 8px;
+	display: table-cell;
+	vertical-align: middle;
+	width: 100px;
+}
+
+.l-new-process-cb-users .b-combobox {
+	display: table-cell;
+	width: 175;
+}
+
+.l-new-process-cb-users .b-combobox button {
+	width: 175px;
+}
+
+.l-new-process-cb-users .b-combobox__text {
+	white-space: nowrap; /* Запрещаем перенос строк */
+	overflow: hidden; /* Обрезаем все, что не помещается в область */
+	text-overflow: ellipsis; /* Добавляем многоточие */
+	width: 142px;
+	float: left;
+}

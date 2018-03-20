@@ -1,0 +1,30 @@
+#place_modal_form .btn-label {
+	position: relative;
+	left: -12px;
+	display: inline-block;
+	padding: 6px 12px;
+	background: rgba(0,0,0,0.15);
+	border-radius: 3px 0 0 3px;
+}
+
+#place_modal_form .btn-labeled {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#place_modal_form .input-group {
+	margin-bottom: 10px;
+}
+
+#place_modal_form .separator {
+	border-right: 1px solid #dfdfe0;
+	height: 80px;
+}
+
+#place_modal_form .separator img {
+	width: 85px;
+}
+
+#place_modal_form .input-group-addon {
+	padding: 4px 12px;
+}

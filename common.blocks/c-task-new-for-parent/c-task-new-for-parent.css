@@ -1,0 +1,12 @@
+.c-task-new-for-parent {
+    width: 773px;
+}
+
+.c-task-new-for-parent .b-textarea-field__l-label{
+    width: 101px;
+}
+
+.c-task-new-for-parent .b-combobox-field{
+    width: 400px;
+    margin-bottom: 8px;
+}

@@ -1,0 +1,17 @@
+.b-task-timesheet__d {
+	width: 72px;
+	min-width: 72px;
+	max-width: 72px;
+	text-align: center;
+	padding: 8px 0 !important;
+	vertical-align: middle !important;
+}
+
+.__d {
+	width: 72px;
+	min-width: 72px;
+	max-width: 72px;
+	text-align: center;
+	padding: 8px 0 !important;
+	vertical-align: middle !important;
+}

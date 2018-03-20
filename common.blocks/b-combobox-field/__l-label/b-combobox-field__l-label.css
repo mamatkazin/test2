@@ -1,0 +1,7 @@
+.b-combobox-field__l-label {
+    padding-right: 8px;
+    vertical-align: middle;
+    display: table-cell;
+    width: 1px;
+    overflow: visible;
+}

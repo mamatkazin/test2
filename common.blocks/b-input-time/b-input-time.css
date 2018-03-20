@@ -1,0 +1,23 @@
+.b-input-time {
+	height: 36px !important;
+	border: 0 !important;
+	border-radius: 0 !important;
+	-webkit-box-shadow: inherit !important;
+	box-shadow: inherit !important;
+	-webkit-transition: inherit !important;
+	-o-transition: inherit !important;
+	transition: inherit !important;
+	text-align: center;
+	font-size: 12px !important;
+
+}
+
+.b-input-time:focus {
+	border-color: none !important;
+	outline: 0 !important;
+	-webkit-box-shadow: inherit !important;
+	box-shadow: inherit !important;
+	background-color: #66afe9 !important;
+	color: white;
+	font-size: 12px !important;
+}

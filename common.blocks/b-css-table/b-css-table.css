@@ -1,0 +1,14 @@
+.b-css-table {
+    display: table;
+    table-layout: auto;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.b-css-table .t-patterns__combobox {
+    margin-bottom: 0px;
+}
+
+.b-css-table .b-input-field {
+    margin-bottom: 0px;
+}

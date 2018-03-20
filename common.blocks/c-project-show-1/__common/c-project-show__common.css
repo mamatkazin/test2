@@ -1,0 +1,45 @@
+.c-project-show-1__common {
+    display: table;
+    table-layout: auto;
+    width: 1128px;
+    padding: 8px;
+    background-color: #e2e2e2;
+    margin-left: 8px;
+}
+
+.c-project-show-1__common-data {
+    display: table-cell;
+    padding-right: 8px;
+}
+
+.c-project-show-1__common-action {
+    display: table-cell;
+    width: 40px;
+}
+
+.c-project-show-1__common-action .btn{
+    padding: 0 12px;
+}
+
+.c-project-show-1__tasks {
+    display: table;
+    table-layout: auto;
+    width: 50%;
+    padding: 8px;
+    background-color: #e2e2e2;
+    margin-left: 8px;
+}
+
+.__tasks-data {
+    display: table-cell;
+    padding-right: 8px;
+}
+
+.__tasks-action {
+    display: table-cell;
+    width: 40px;
+}
+
+.__tasks-action .btn{
+    padding: 0 12px;
+}

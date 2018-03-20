@@ -1,0 +1,10 @@
+.b-checkbox-task__checkbox_state-3 {
+    position: relative;
+    left: -15px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 14px;
+    height: 14px;
+    background-color: darkgray;
+    float: left;
+}

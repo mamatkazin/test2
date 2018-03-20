@@ -1,0 +1,6 @@
+.c-process-card__footer {
+	border-top: 1px solid #fed22f;
+	display: table;
+	width: 100%;
+	padding: 3px 8px 0 8px;
+}

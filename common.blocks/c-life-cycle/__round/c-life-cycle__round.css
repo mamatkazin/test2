@@ -1,0 +1,9 @@
+.c-life-cycle__round {
+	border-radius: 30px;
+	border: 2px solid #2ba83d;
+	width: 60px;
+	height: 60px;
+	font-size: 38px;
+	color: #ff9a00;
+	font-weight: 300;
+}

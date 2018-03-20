@@ -1,0 +1,241 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #808080;
+    font-size: 12px;
+}
+
+.container-fluid {
+    position: relative;
+    min-height: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    min-width: 1600px;
+    max-width: 1600px;
+    border: 1px solid #ddd;
+    background-color: white;
+    box-shadow: 1px 8px 32px 0 rgba(0,0,0,.5);
+}
+
+.body-app .panel {
+    border-color: #ddd;
+    background-color: #ddd;
+    border-radius: 0;
+    margin-bottom: 0;
+    display: table;
+    width: 100%;
+    height: 36px;
+}
+
+.text-left {
+    display: table-cell;
+    text-align: left;
+
+}
+
+.text-left a {
+    font-size: 24px;
+    padding: 0px 12px;
+}
+
+.text-right {
+    display: table-cell;
+    text-align: right;
+}
+
+.body-app  footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.error {
+    background-color: #d9534f;
+    color: white;
+    font-size: 14px;
+    height: 30px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.info {
+    background-color: #00A7EA;
+    color: white;
+    font-size: 14px;
+    height: 30px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.drag-drop {
+    cursor: pointer;
+}
+
+.body-app  .top-panel .pull-left a {
+    font-size: 26px;
+    padding: 0;
+    line-height: 14px;
+    margin: 0 8px;
+}
+
+.body-app  .act {
+    color: black;
+}
+
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+    color: #2e6e9e;
+}
+
+.top-panel .btn:active, .top-panel .btn.active {
+    background-image: none;
+    outline: 0;
+
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);
+            box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0);
+}
+
+
+
+.tab-content #editProjectTeam {
+    overflow-y: scroll;
+}
+
+#task_spid_1, #task_spid_2, #task_spid_3 {
+    height: 100px;
+    position: relative;
+
+}
+
+/*.c-project-edit #spid_task {
+    height: 80px !important;
+    position: relative;
+}*/
+
+/*#spid_task table {
+    width: 462px;
+}*/
+
+#task_spid_1 table tbody tr td div div, #task_spid_2 table tbody tr td div div, #task_spid_3 table tbody tr td div div {
+    margin: 0 auto;
+}
+
+#task_spid_1 table tbody tr td div div g g text, #task_spid_2 table tbody tr td div div g g text, #task_spid_3 table tbody tr td div div g g text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#spid_project {
+    height: 100px;
+    position: relative;
+    opacity: 0.4;
+}
+
+#spid_project table tbody tr td div div {
+    margin: 0 auto;
+    position: inherit;
+}
+
+#spid_project table tbody tr td div div g g text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-tabs {
+    margin: 8px 0;
+}
+
+.c-task-show .modal-title, .c-project-show .modal-title {
+    text-align: right;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+.c-task-show .modal-title {
+    width: 77.92%;
+}
+
+.c-project-show .modal-title {
+    width: 79%;
+}
+
+.panel-heading {
+    padding: 4px 15px;
+}
+
+table {
+    border-collapse: inherit;
+}
+
+main .google-visualization-orgchart-node {
+  border: 2px solid transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  background-color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+}
+
+main .google-visualization-orgchart-nodesel {
+    border: 2px solid transparent;
+/*    background-color: #edf7ff;*/
+    background: none;
+}
+
+main .google-visualization-orgchart-linebottom {
+    border-bottom: 1px solid #fed22f;
+}
+
+main .google-visualization-orgchart-linetop {
+    border-top: 1px solid #fed22f;
+}
+
+main .google-visualization-orgchart-lineleft {
+    border-left: 1px solid #fed22f;
+}
+
+main .google-visualization-orgchart-lineright {
+    border-right: 1px solid #fed22f;
+}
+
+#id_showCharts .t-patterns__combobox button input {
+    background-color: transparent !important;
+    color: #333333;
+    font-weight: 500;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+#id_showCharts .btn-default {
+    background-color: inherit;
+    border-color: transparent;
+}
+
+#id_showCharts p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 8px;
+    text-decoration: underline;
+    cursor: pointer;
+    //height: 14px;
+}
+
+#id_showCharts .fa-exclamation-circle {
+    top: -4px;
+    position: relative;
+    color: #E07D96;
+    margin-right: 8px;
+}
+
+#id_showCharts svg {
+    height: 24px;
+}
+
+.b-combobox__icon {
+    top: 5px;
+}

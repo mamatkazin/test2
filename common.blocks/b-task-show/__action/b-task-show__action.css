@@ -1,0 +1,4 @@
+.b-task-show__action {
+    display: table-cell;
+    width: 40px;
+}

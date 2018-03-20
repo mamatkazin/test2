@@ -1,0 +1,8 @@
+.b-tree-card_type-child {
+/*    width: 100px;*/
+    height: 94px;
+}
+
+.b-tree-card_type-child .b-tree-card__main {
+    min-height: 51px;
+}

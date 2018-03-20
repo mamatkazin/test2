@@ -1,0 +1,46 @@
+/*.c-project-show__content {
+    display: table;
+    table-layout: auto;
+    width: 100%;
+}
+
+.c-project-show__content .tab-nav {
+    display: table-cell;
+    width: 56px;
+}
+
+.c-project-show__content .tab-content {
+    display: table-cell;
+    padding: 8px 8px 8px 0;
+}
+
+.c-project-show__content .tab-content .tab-pane {
+    background-color: whitesmoke;
+    height: 100%;
+    width: inherit;
+}
+
+.c-project-show__content .sideways {
+    position: absolute;
+}
+
+.c-project-show__content .sideways>li>a {
+    width: 200px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.c-project-show__content .sideways.tabs-left {
+    left: 0;
+    top: 181px;
+}
+
+.c-project-show__content .sideways>li {
+    height: 56px;
+    width: 56px;
+    margin-bottom: 144px;
+}
+
+.c-project-show__content .sideways>li.active a {
+    background-color: whitesmoke;
+}*/

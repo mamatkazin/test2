@@ -1,0 +1,6 @@
+.l-kanban__left{
+    display: table-cell;
+    width: 500px;
+    padding-right: 16px;
+    vertical-align: top;
+}

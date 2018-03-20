@@ -1,0 +1,8 @@
+.l-task-edit__responsible {
+    width: 526px;
+}
+
+.l-task-edit__responsible button input {
+    width: 390px;
+    height: 20px;
+}

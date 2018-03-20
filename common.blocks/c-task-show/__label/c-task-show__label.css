@@ -1,0 +1,17 @@
+.c-task-show__label {
+    display: table;
+    table-layout: auto;
+    width: 100%;
+    padding: 8px;
+}
+
+.c-task-show__label label:first-child {
+    display: table-cell;
+    padding-right: 8px;
+    width: 120px;
+}
+
+.c-task-show__label label:last-child{
+    display: table-cell;
+
+}

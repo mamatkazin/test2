@@ -1,0 +1,15 @@
+.b-fieldset {
+	padding: 8px;
+	margin: 8px;
+	border: 1px solid #c0c0c0;
+	height: inherit;
+	min-height: 152px;
+}
+
+.b-fieldset legend {
+	width: inherit;
+	font-size: 18px;
+	border: 0;
+	padding: 0 8px;
+	margin: 0;
+}

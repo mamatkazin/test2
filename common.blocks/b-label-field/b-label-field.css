@@ -1,0 +1,18 @@
+.b-label-field{
+    display: table;
+    margin-bottom: 8px;
+}
+
+.b-label-field label{
+    display: table-cell;
+}
+
+.b-label-field label:first-child{
+    font-weight: bold!important;
+    white-space: pre-wrap;
+}
+
+.b-label-field label:last-child{
+    font-weight: normal;
+    white-space: pre-wrap;
+}

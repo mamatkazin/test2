@@ -1,0 +1,28 @@
+.b-task-timesheet__hour {
+	width: 72px;
+	min-width: 72px;
+	max-width: 72px;
+	padding: 8px 0 !important;
+}
+
+.__hour {
+	padding: 0 !important;
+	vertical-align: middle !important;
+	width: 72px;
+	min-width: 72px;
+	max-width: 72px;
+	text-align: center;
+}
+
+.__hour:focus, .b-task-timesheet__hour:focus {
+	background-color: #66afe9;
+}
+/*
+.__hour:hover {
+	background-color: #66afe9 !important;
+}
+
+.__hour:hover input {
+	background-color: #66afe9 !important;
+	color: white;
+}*/

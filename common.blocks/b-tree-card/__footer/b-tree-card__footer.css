@@ -1,0 +1,8 @@
+.b-tree-card__footer {
+	border-top: 1px solid #fed22f;
+	display: table;
+	width: 100%;
+	padding: 0 8px !important;
+    min-height: 20px;
+    height: 20px;
+}

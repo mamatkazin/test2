@@ -1,0 +1,9 @@
+.l-task-edit__normal-time {
+    width: 248px;
+    float: left;
+    margin-right: 16px;
+}
+
+.l-task-edit__normal-time label {
+    width: 200px;
+}

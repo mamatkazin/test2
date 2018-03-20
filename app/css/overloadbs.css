@@ -1,0 +1,35 @@
+.container-fluid {
+  overflow-y: auto;
+}
+.modal-body {
+  position: relative;
+  padding: 0px;
+}
+.panel-heading {
+	height: 31px;
+	padding: 3px 8px;
+	border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.close {
+	text-shadow: 0 0px 0 transparent;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn {
+	height: 24px;
+	padding: 0px 8px;
+}
+.panel-footer {
+    padding: 4px 0; 
+}
+.b-input {
+    height: 22px;
+}

@@ -1,0 +1,19 @@
+.b-informers {
+
+}
+
+.b-informers center {
+/*    margin-top: -10px;*/
+}
+
+.b-informers table {
+    width: 100%;
+    text-align: center;
+/*    margin-top: -14px;*/
+}
+
+.b-informers th, .b-informers td {
+    text-align: center;
+    width: 49%;
+    font-size: 18px;
+}

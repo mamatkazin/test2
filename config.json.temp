@@ -1,0 +1,21 @@
+{
+	"APP_DATA_BASE": "SYSDBA:masterkey@localhost//Users/ilnur/work/go/src/kot_mini/KOT.FDB",
+    "APP_DATA_BASE": "SYSDBA:qwe123@192.168.1.50/c:/gopath/src/kot_mini/BD/KOT.FDB",
+	"APP_PORT": ":8080",
+	"WS_HOST": "localhost",
+	"MAIL_USER_EMAIL": "info@kot-codd.ru",
+	"MAIL_USER_PASS": "7tbcW3G",
+	"MAIL_SMTP": "smtp.locum.ru",
+	"MAIL_SMTP_PORT": "2525",
+	"MAIL_DEVELOPERS": "mamatkazin@mail.ru",
+    "MAIL_H": "16",
+	"MAIL_M": "15"
+    "APP_DATA_BASE_2_5": "SYSDBA:masterkey@localhost//Users/ilnur/work/go/src/kot_mini/KOT.FDB",
+	"APP_DATA_BASE_3_0": "SYSDBA:masterkey@localhost//Users/ilnur/work/go/src/kot_mini/KOT_3_0.FDB",
+    "APP_DATA_BASE_3_0": "SYSDBA:masterkey@localhost//Users/ilnur/work/go/src/kot_mini/KOT_3_0.FDB",
+	"USER_DEP_BD": "SYSDBA:masterkey@192.168.1.36/C:/Users/MichMakarov/Project/kot_mini_fdbs/OTCH!171129.fdb",	
+	"OTCH1_7": "SYSDBA:masterkey@192.168.1.36/C:/Users/MichMakarov/Project/kot_mini_fdbs/OTCH!171129.fdb",
+	"OTCH8_9": "SYSDBA:masterkey@192.168.1.36/C:/Users/MichMakarov/Project/kot_mini_fdbs/OTCHNIIORD.FDB",
+    "RUN_MODE":"DEVELOPING"
+    
+}

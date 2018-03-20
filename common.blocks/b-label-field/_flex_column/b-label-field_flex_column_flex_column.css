@@ -1,0 +1,4 @@
+.b-label-field_flex_column {
+    display: flex;
+    flex-direction: column;
+}

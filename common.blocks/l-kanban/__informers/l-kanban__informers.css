@@ -1,0 +1,21 @@
+.l-kanban__informers {
+	display: table-cell;
+
+}
+
+.l-kanban__informers center {
+	margin-top: -10px;
+
+}
+
+.l-kanban__informers table {
+	width: 100%;
+	text-align: center;
+    margin-top: -14px;
+}
+
+.l-kanban__informers th, .l-kanban__informers td{
+	text-align: center;
+	width: 33.33%;
+    font-size: 18px;
+}

@@ -1,0 +1,34 @@
+.b-combobox__list {
+	background-color: #eee;
+	cursor: pointer;
+	font-size: 12px;
+	padding: 10px;
+	overflow-y: scroll;
+	max-height: 133px;
+	top: inherit;
+	left: inherit;
+	width: 100%;
+    min-width: inherit;
+}
+
+.b-combobox__list li:hover {
+	background-color: gray;
+	color: white;
+}
+
+.__list {
+	background-color: #eee;
+	cursor: pointer;
+	font-size: 12px;
+	padding: 10px;
+	overflow-y: scroll;
+	max-height: 133px;
+	top: inherit;
+	left: inherit;
+	width: 100%;
+}
+
+.__list li:hover {
+	background-color: gray;
+	color: white;
+}

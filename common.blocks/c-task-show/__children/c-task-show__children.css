@@ -1,0 +1,9 @@
+.c-task-show__children th:nth-child(4), .c-task-show__children th:nth-child(5){
+    width: 1px;
+
+}
+
+.c-task-show__children td:nth-child(4) .btn, .c-task-show__children td:nth-child(5) .btn{
+    padding: 0px 7px;
+}
+    

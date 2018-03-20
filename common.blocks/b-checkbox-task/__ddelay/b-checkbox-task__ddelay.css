@@ -1,0 +1,8 @@
+.b-checkbox-task__ddelay {
+	text-align: right;
+    display: table-cell;
+/*    width: 32px;*/
+    max-width: 42px;
+    min-width: 42px;
+}
+    

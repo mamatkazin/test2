@@ -1,0 +1,6 @@
+.b-textarea-field {
+    display: table;
+    table-layout: auto;
+    width: 100%;
+    margin-bottom: 8px;
+}

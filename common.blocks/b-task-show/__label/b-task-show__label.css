@@ -1,0 +1,19 @@
+.b-task-show__label {
+    display: table;
+    table-layout: auto;
+    width: 100%;
+    padding: 8px;
+}
+
+.b-task-show__label label:first-child {
+    display: table-cell;
+    padding-right: 8px;
+    width: 120px;
+    font-weight: bold;
+}
+
+.b-task-show__label label:last-child{
+    display: table-cell;
+    font-weight: normal;
+
+}

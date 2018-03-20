@@ -1,0 +1,19 @@
+.b-checkbox-task__checkbox_state-1 {
+    border: 1px solid gray;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    border-radius: 2px;
+    position: relative;
+    left: -15px;
+    width: 14px;
+    height: 14px;
+    background-color: #F0F0F0;
+    float: left;
+}
+.b-checkbox-task__checkbox_state-1:before {
+    position: relative;
+    top: -2px;
+    left: 1px;
+    content: "\2714";
+    color: green;
+}

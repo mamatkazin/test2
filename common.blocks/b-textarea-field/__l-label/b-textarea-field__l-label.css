@@ -1,0 +1,7 @@
+.b-textarea-field__l-label {
+    padding-right: 8px;
+    vertical-align: top;
+    display: table-cell;
+    width: 1px;
+    overflow: visible;
+}
