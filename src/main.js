@@ -11,14 +11,14 @@ import svgbar_v_forbem from './svgbar_v_forbem.vue'; // bem, temporary
 import svgbar_forbem from './svgbar_forbem.vue'; // bem, temporary
 import time_chart_forbem from './time_chart_forbem.vue'; // bem, temporary
 
-Vue.component('project_card', Vue.extend(project_card))
-Vue.component('bar', Vue.extend(bar))
-Vue.component('chart', Vue.extend(chart))
-Vue.component('time_chart', Vue.extend(time_chart))
-Vue.component('svgbar', Vue.extend(svgbar))
-Vue.component('svgbar_v_forbem', Vue.extend(svgbar_v_forbem))
-Vue.component('svgbar_forbem', Vue.extend(svgbar_forbem))
-Vue.component('time_chart_forbem', Vue.extend(time_chart_forbem))
+// Vue.component('project_card', Vue.extend(project_card))
+// Vue.component('bar', Vue.extend(bar))
+// Vue.component('chart', Vue.extend(chart))
+// Vue.component('time_chart', Vue.extend(time_chart))
+// Vue.component('svgbar', Vue.extend(svgbar))
+// Vue.component('svgbar_v_forbem', Vue.extend(svgbar_v_forbem))
+// Vue.component('svgbar_forbem', Vue.extend(svgbar_forbem))
+// Vue.component('time_chart_forbem', Vue.extend(time_chart_forbem))
 
 Object.defineProperty(Vue.prototype, '$bus', {
 	get() {

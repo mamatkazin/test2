@@ -1,5 +1,5 @@
 <template>
-    <svg class="svg-time-chart" id="{{svgid}}">
+    <svg class="svg-time-chart" v-bind:id="svgid">
     </svg>
 </template>
 <script>
@@ -12,7 +12,7 @@
             max_time: {type: String},
         },
         data: function() {
-            
+
             return {
                 jdata: [{}]
             }
@@ -21,7 +21,7 @@
             //console.log('person svgid ##### ', this.person, this.svgid);
 
         },
-        ready: function () {            
+        mounted: function () {
 
             function makeGreySizedBarUn(s, fact, max, h) {
 
@@ -64,7 +64,7 @@
                             fill: 'black',
                             opacity: 1,
                              "font-size": textSize,
-                            });     
+                            });
 
                 } else {
 

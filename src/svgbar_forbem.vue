@@ -1,5 +1,5 @@
 <template>
-    <svg class="svg-bar" id="{{svgid}}">
+    <svg class="svg-bar" v-bind:id="svgid">
     </svg>
 </template>
 <script>
@@ -22,7 +22,7 @@
             console.log('f p d ~~~~', this.fact, this.plan, this.delta);
 
         },
-        ready: function () {
+        mounted: function () {
 
             function makeStSizedBar(s, fact, plan, add, h) {
 

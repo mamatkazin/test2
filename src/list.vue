@@ -19,7 +19,7 @@
                     <div class="body__block">
                         <div class="block__row">
                             <div class="block__row_name">
-                                <span title="{{item.name}}">{{item.name}}</span>
+                                <span v-bind:title="item.p_name">{{item.name}}</span>
                             </div>
                             <div class="block__row_border-bottom"></div>
                         </div>
@@ -30,13 +30,14 @@
                                 <span>{{item.utilisation}}</span>
                                 <span class="component__chart-finish">40</span>
                             </div>
-                            <svg class="svg" data-u="{{item.utilisation}}"></svg>
+                            <svg class="svg" v-bind:data-u="item.utilisation"></svg>
                         </div>
                         <div class="column">
                             <div class="block__row" v-for="i in item.tasks">
                                 <div class="block__row-child">
                                     <div class="component__one">
-                                        <span title="{{i.name}}">{{i.name}}</span>
+                                        <span v-bind:title="i.p_name" class="component__one-first">{{i.p_code}}-||-{{i.p_name}}</span>
+                                        <span v-bind:title="i.t_name" class="component__one-second">-||-{{i.t_name}}</span>
                                     </div>
                                     <div class="column block__column">
                                         <div class="component__two">
@@ -44,7 +45,7 @@
                                             <div class="component__two-plan">{{i.plan}}</div>
                                         </div>
 
-                                        <svg class="svg-task" data-fact="{{i.fact_all}}" data-plan="{{i.plan}}"></svg>
+                                        <svg class="svg-task" v-bind:data-fact="i.fact_all" v-bind:data-plan="i.plan"></svg>
                                     </div>
                                     <div class="component__three">{{i.fact_current}}</div><div class="component__three_text">ч.</div>
 
@@ -54,7 +55,7 @@
 
                         <div class="component__four">
                             <div class="component__four_row" v-bind:style="item.state == 1 ? {'display': 'block'} : {'display': 'none'}">Согласовано</div>
-                            <div class="component__four_row" title="{{item.descr}}" v-bind:style="item.state == 2 ? {'display': 'block'} : {'display': 'none'}">Не согласовано</div>
+                            <div class="component__four_row" v-bind:title="item.descr" v-bind:style="item.state == 2 ? {'display': 'block'} : {'display': 'none'}">Не согласовано</div>
                             <div v-bind:style="item.state == 0 ? {'display': 'block'} : {'display': 'none'}"
                                  class="component__four_row-complex">
                                 <button class="component__four_button-yes"
@@ -456,6 +457,17 @@
             line-height: 18px;
             margin-top: 16px;
 
+            &-first
+                width: 300px;
+                display: inline-block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+            &-second
+                width: 240px;
+                display: inline-block;
+                overflow: hidden;
+                text-overflow: ellipsis;
 
         &__two
             height: 12px;

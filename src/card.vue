@@ -12,7 +12,7 @@
                 <div class="body__row"  v-for="item in jdata">
                     <div class="body__row_left">{{item.name}}</div>
                     <div class="body__row_right">
-                        <bar data-fact="{{item.fact}}" data-plan="{{item.plan}}"></bar>
+                        <bar v-bind:data-fact="item.fact" v-bind:data-plan="item.plan"></bar>
                         <div>{{item.fact}}</div>
                     </div>
                 </div>
@@ -100,13 +100,13 @@
                 font-size: 16px;
                 line-height: 16px;
                 padding-top: 8px;
-                
+
 
             &_right
                 display: flex;
                 flex-direction: row;
                 width: 345px;
-                height: 30px;                
+                height: 30px;
                 border-left: 1px solid #ccc;
                 padding-left: 1px;
                 padding-top: 8px;

@@ -28,7 +28,7 @@ function ShowLabourIntensity(answer) {
         },
         {
             tag: 'script',
-            attrs: { src: "app/build.js" }
+            attrs: { src: "app/dist/build.js" }
         }
     ]))});
 }

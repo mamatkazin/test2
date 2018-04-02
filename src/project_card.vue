@@ -27,7 +27,7 @@
                     <svgbar v-bind:svgid="'bar-period'" v-bind:fact="jdata.Project.total_stage.fact" v-bind:plan="jdata.Project.total_stage.plan" v-bind:delta="jdata.Project.total_stage.delta"></svgbar>
                 </div>
             </div>
-            <dl class="depart-charts" v-for="(index, item) in jdata.Project.stage.items">
+            <dl class="depart-charts" v-for="(item, index) in jdata.Project.stage.items">
                 <dt class="depart-charts__header">{{item.name}}</dt>
                 <dd class="depart-charts__bar">
 
@@ -53,7 +53,7 @@
             </div>
             <div class="all-depart-charts">
 
-                <div class="bar-period" v-for="(i, item) in jdata.hd_fact" v-bind:key="item.id">
+                <div class="bar-period" v-for="(item, i) in jdata.hd_fact" v-bind:key="item.id">
                     <div class="depart_name">
                         {{item.name}}
                     </div>

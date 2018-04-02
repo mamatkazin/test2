@@ -84,12 +84,14 @@ $(document).on('click', '.top-panel a', function() {
             user_id: $('input[name="user_id"]').val(),
             builder: "ShowCaptionTTS",
         };
+        WSSend(msg);
     } else if (this.getAttribute('data-id') == '5') {
         var msg = {
             action_name: 'ts_accept_show',
             start: moment().startOf('week').add(1, 'days').format('DD.MM.YYYY'),
             finish: moment().endOf('week').add(1, 'days').format('DD.MM.YYYY')
         }
+        WSSend(msg);
         //console.log('5', msg);
         //ShowLabourIntensity();
     } else if (this.getAttribute('data-id') == '6') {
@@ -99,6 +101,7 @@ $(document).on('click', '.top-panel a', function() {
             user_id: $('input[name="user_id"]').val(),
             builder: "ReportProjectsDepartmentShow"
          };
+         WSSend(msg);
     } else if (this.getAttribute('data-id') == '7') {
          var msg = {
             action_name: "ReportDepUtilisationShow",
@@ -107,19 +110,22 @@ $(document).on('click', '.top-panel a', function() {
             user_id: $('input[name="user_id"]').val(),
             builder: "ReportDepUtilisationShow"
          };
+         WSSend(msg);
     } else if (this.getAttribute('data-id') == '8') {
         var msg = {
             action_name: "WorksheetShow",
             selector: "#place_content",
             builder: "WorksheetShow"
         };
+        WSSend(msg);
     } else if (this.getAttribute('data-id') == '9') {
-        //ReportSummaryShow();
+        ReportSummaryShow();
     } else if (this.getAttribute('data-id') == '10') {
         var msg = {
            action_name: "dashboard_show",
            employee_id: '0'
         };
+        WSSend(msg);
     } else if (this.getAttribute('data-id') == '11') {
         ShowDashboards();
     } else if (this.getAttribute('data-id') == '13') {
@@ -139,10 +145,11 @@ $(document).on('click', '.top-panel a', function() {
         };
 
         g_heap['type'] = 'project';
+
+        WSSend(msg);
     }
     //console.log('getAttribute("data-id")', msg);
-    WSSend(msg);
-    ShowSnipper();
+
 });
 
 
