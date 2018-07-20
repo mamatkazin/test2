@@ -30,7 +30,7 @@ ws.onopen = function() {
 
     var msg = {
         action_name: "ShowCaptionTTS",
-        date: (new Date()).toLocaleDateString(),
+        date: (new Date()).toLocaleDateString('ru-RU'),
         selector: "#place_content",
         user_id: $('input[name="user_id"]').val(),
         builder: "ShowCaptionTTS",

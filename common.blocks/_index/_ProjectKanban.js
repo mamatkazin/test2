@@ -47,7 +47,7 @@
                                                     content: [
                                                         {
                                                             block: 't-patterns__combobox',
-//                                                            mix: { 
+//                                                            mix: {
 //                                                                block: 'c-project-kanban__responsible'
 
 //                                                            },
@@ -69,7 +69,7 @@
                                                     content: [
                                                         {
                                                             block: 't-patterns__combobox',
-//                                                            mix: { 
+//                                                            mix: {
 //                                                                block: 'c-project-kanban__responsible',
 //                                                                attrs: { style: 'width: 200px!important;'},
 //                                                            },
@@ -116,7 +116,7 @@
                                                         }
                                                     ]
                                                 }
-                                                
+
                                             ]
                                         }
                                     ]
@@ -307,7 +307,7 @@
          }));
 
         // зовем функцию которая нарисует chart
-//        google.charts.setOnLoadCallback(drawGougeProject);  
+//        google.charts.setOnLoadCallback(drawGougeProject);
 
 //        function drawGougeProject() {
 //            var mydata = JSON.parse(jdata.Spid);
@@ -318,7 +318,7 @@
 
 //                redFrom   : 0 , redTo   : 60,
 //                yellowFrom: 60, yellowTo: 90,
-//                greenFrom : 90, greenTo : 100, 
+//                greenFrom : 90, greenTo : 100,
 
 //                minorTicks: 3,
 
@@ -339,7 +339,7 @@
 //        }
         g_heap['f_responsible_id'] = jdata.Responsibles.FirstID.toString();
         g_heap['f_template_id'] = jdata.Templates.FirstID.toString();
-        g_heap['f_sub_name'] = jdata.SubName, 
+        g_heap['f_sub_name'] = jdata.SubName,
         g_heap['f_code'] = jdata.Code
 
         var scrollHeight = Math.max(
@@ -377,7 +377,7 @@ function ProjectRequestReloadKanbanColumn(responsible_id, kot_id, project_id, te
 
 function ProjectReloadKanbanColumn(answer) {
     var elem = $(answer["selector"])
-    
+
     elem.empty();
 
     console.log(answer);
@@ -420,7 +420,7 @@ function ProjectReloadKanbanColumn(answer) {
                                             tag: 'span',
                                             content: i_item.Zam + ' / ' + i_item.Responsible + ' / ' + i_item.Gip
                                         },
-                                        
+
                                     ]
                                 },
                                 {
@@ -435,13 +435,13 @@ function ProjectReloadKanbanColumn(answer) {
                                     elem: 'hr',
                                     content: (function() {
                                         var hr = {};
-                                        
+
                                         if (! $.isEmptyObject(i_item.Tasks)) {
                                             hr = {
                                                 tag: 'hr'
                                             };
                                         }
-                                        
+
                                         return hr;
                                     })()
                                 },
@@ -518,7 +518,7 @@ function ProjectReloadKanbanColumn(answer) {
                                                                         ]
                                                                     });
                                                                 }
-                                                                    
+
                                                             });
                                                         }
                                                         return tasks;
@@ -531,12 +531,6 @@ function ProjectReloadKanbanColumn(answer) {
                                 {
                                     elem: 'footer',
                                     content: [
-                                        {
-                                            elem: 'eye-open',
-                                            tag: 'span',
-                                            cls: 'glyphicon glyphicon-eye-open',
-                                            attrs: { 'aria-hidden': "true" }
-                                        },
                                         {
                                             elem: 'cor-action',
                                             js: {
@@ -631,7 +625,7 @@ function ProjectTaskCloseShow(answer){
                                             	justifyContent: 'center',
                                             	alignItems: 'center'
                                             },
-                                            content: [ 
+                                            content: [
     	                                        {
     	                                        	block: 'b-flex-row',
     	                                        	js: {
@@ -642,7 +636,7 @@ function ProjectTaskCloseShow(answer){
     	                                        }
                                             ]
                                         },
-                                       
+
                                         {
                                             block: 'c-modal-form__panel-footer',
                                             cls: 'panel-footer',
@@ -651,7 +645,7 @@ function ProjectTaskCloseShow(answer){
                                                     block: 'b-button-call',
                                                     mix: {
                                                         block: 'c-project-executer',
-                                                        
+
                                                     },
                                                     tag: 'button',
                                                     mods: { padding: 'right'},
@@ -703,7 +697,7 @@ function ProjectTaskCloseShow(answer){
                 }
             ]
         }));
-    
+
         $(elem).modal('show');
 
     });
@@ -711,7 +705,7 @@ function ProjectTaskCloseShow(answer){
 }
 
 function ProjectTaskClose(answer){
-   
+
     var jdata = JSON.parse(answer["data"]);
 
     modules.require(['BEMHTML', 'i-bem-dom'], (BEMHTML, bemDom) => {
@@ -748,7 +742,7 @@ function ProjectTaskShow(answer){
       ;
 
     elem.empty();
-    
+
     modules.require(['BEMHTML', 'i-bem-dom'], (BEMHTML, bemDom) => {
         bemDom.append(bemDom.doc.find(answer['selector']), BEMHTML.apply({
             block: 'b-flex-row',
@@ -794,7 +788,7 @@ function ProjectTaskShow(answer){
                                                         },
                                                         {
                                                             tag: 'button',
-                                                            
+
                                                             cls: 'close',
                                                             attrs: { type: 'button', 'data-dismiss': 'modal', 'aria-hidden': 'true', style: 'padding-bootom: 2px; padding-right: 4px;' },
                                                             content: 'x'
@@ -815,7 +809,7 @@ function ProjectTaskShow(answer){
                                                             },
 //                                                            attrs: { id: 'modalWindowRequestCanban' },
 //                                                            cls: 'modalWindowRequestEdit',
-                                                            content: [ 
+                                                            content: [
                                                                 {
                                                                     block: 'b-flex-column',
                                                                     js: {
@@ -872,10 +866,10 @@ function ProjectTaskShow(answer){
                                                                                         tag: 'tbody',
                                                                                         content: (function(){
                                                                                             var res = [];
-                                                                                            
+
                                                                                             if (! $.isEmptyObject(jdata.History)) {
                                                                                                 jdata.History.map(function(i_item) {
-                                                                                                    
+
                                                                                                     res.push({
                                                                                                         tag: 'tr',
                                                                                                         content: [
@@ -898,7 +892,7 @@ function ProjectTaskShow(answer){
                                                                                                         ]
                                                                                                     });
                                                                                                 });
-                                                                                    
+
                                                                                                 return res;
                                                                                             }
                                                                                         })()
@@ -960,7 +954,7 @@ function ProjectTaskShow(answer){
                                                                         },
                                                                         content: (function() {
                                                                             var res = [];
-                                                                                
+
                                                                             if (jdata.Script == 1) {
                                                                                 res.push([
                                                                                     {
@@ -972,7 +966,7 @@ function ProjectTaskShow(answer){
                                                                                                 kot_id: answer["kot_id"],
                                                                                                 task_id: answer["task_id"]
                                                                                             }
-                                                                                            
+
                                                                                         },
                                                                                         tag: 'button',
                                                                                         mods: { padding: 'right'},
@@ -1025,7 +1019,7 @@ function ProjectTaskShow(answer){
                                                                                                 kot_id: answer["kot_id"],
                                                                                                 task_id: answer["task_id"]
                                                                                             }
-                                                                                            
+
                                                                                         },
                                                                                         tag: 'button',
                                                                                         mods: { padding: 'right'},
@@ -1064,7 +1058,7 @@ function ProjectTaskShow(answer){
                                                                                                 kot_id: answer["kot_id"],
                                                                                                 task_id: answer["task_id"]
                                                                                             }
-                                                                                            
+
                                                                                         },
                                                                                         cls: 'btn btn-danger',
                                                                                         attrs: { type: 'submit' },
@@ -1108,7 +1102,7 @@ function ProjectTaskShow(answer){
                                                                                                 kot_id: answer["kot_id"],
                                                                                                 task_id: answer["task_id"]
                                                                                             }
-                                                                                            
+
                                                                                         },
                                                                                         tag: 'button',
                                                                                         mods: { padding: 'right'},
@@ -1154,13 +1148,13 @@ function ProjectTaskShow(answer){
                                                                             };
                                                                             return res;
                                                                         })()
-                                                                    
+
                                                                     })
                                                                 }
                                                                 return block;
                                                             })()
                                                         }
-                                                        
+
                                                     ]
                                                 }
                                             ]
@@ -1172,9 +1166,9 @@ function ProjectTaskShow(answer){
                     ]
                 }
             ]
-        
+
         }));
-    
+
         $(elem).modal('show');
     });
 }

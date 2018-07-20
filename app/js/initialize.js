@@ -13,6 +13,17 @@ $('.pdate').datepicker();
 
 $('.b-input-time').mask('99:99', { placeholder: 'чч:мм' });
 
+function WSSend(msg) {
+    if (ws.readyState != 1) {
+        console.log('WSSend(msg): ' + msg);
+        ws = new WebSocket(ws_host);
+    }
+
+    msg['user_id'] = $('input[name="user_id"]').val()
+    ws.send(JSON.stringify(msg));
+    console.log('WSSend', msg);
+};
+
 function ShowError(error){
     if(error==1) var err_text = "Не все обязательные поля заполнены!";
 //    if(error==4) var err_text = "Дата исполнения контракта должна быть больше даты заключения!";
