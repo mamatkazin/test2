@@ -13,11 +13,11 @@ modules.define('c-tts-change-week', ['i-bem-dom'], function(provide, BEMDOM) {
 
                     if ($('input[name="user_id"]').val() == "447") {
                       //Если сюда пришли, то уже нужно убрать этот костыль
-                      if ((moment().startOf('week').add(1, 'days').subtract(70, 'days').format('DD.MM.YYYY') == this.params.date) && (this.params.difference == '-')) {
+                      if ((moment().startOf('week').add(1, 'days').subtract(210, 'days').format('DD.MM.YYYY') == this.params.date) && (this.params.difference == '-')) {
                           this.domElem.attr('disabled', 'disabled');
                       }
                     } else {
-                      if ((moment().startOf('week').add(1, 'days').subtract(35, 'days').format('DD.MM.YYYY') == this.params.date) && (this.params.difference == '-')) {
+                      if ((moment().startOf('week').add(1, 'days').subtract(210, 'days').format('DD.MM.YYYY') == this.params.date) && (this.params.difference == '-')) {
                           this.domElem.attr('disabled', 'disabled');
                       }
                     }

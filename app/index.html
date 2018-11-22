@@ -122,13 +122,13 @@ var options = {
         vAxis: {
             minValue: 0,
             textPosition: 'none',
-            baselineColor: 'none', 
+            baselineColor: 'none',
             gridlines: {color: 'none'},
         },
         hAxis: {
             minValue: 0,
             textPosition: 'none',
-            baselineColor: 'none', 
+            baselineColor: 'none',
             gridlines: {color: 'none'},
         },
         tooltip: { textStyle: {fontSize: 12}},
@@ -165,7 +165,7 @@ function drawMultSeries() {
         vAxis: {
             textStyle : { fontSize: 12 },
             gridlines: {color: 'transparent'},
-            baselineColor: 'none', 
+            baselineColor: 'none',
             titleTextStyle: {color: 'red'}
         },
         tooltip: { textStyle: {fontSize: 12}},
@@ -183,7 +183,7 @@ function drawMultSeries() {
     <body class="index">
         <div id="app" style="height: 100%; width: 100%; overflow-y: hidden; overflow-x: auto;">
     		<input type="hidden" name="user_id" value="{{.UserID}}"></input>
-<!-- 
+<!--
 <div id="chart_div_bar" style="display: inline-block; vertical-align: top"></div>
 <div id="chart_div" style="display: inline-block; vertical-align: top"></div>
  -->
@@ -210,6 +210,10 @@ function drawMultSeries() {
                             <a class="btn" data-id="10" title="Отчеты">
                                 <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
                             </a>
+                            <a class="btn" title="Перейти к канбан доске" href="/vue/projects/kanban">
+                                <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+                            </a>
+
                             <!-- <a class="btn" data-id="13" title="Тест чартов">
                                 <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
                             </a> -->

@@ -27,9 +27,9 @@ function dragDrop(ev) {
     var error = 0;
     var err_text;
     var destination;
-    
+
     var source_id = ev.dataTransfer.getData("Text");
-    
+
     if (source_id != ""){
         var contract = document.getElementById(source_id);
         var parent_lavel = contract.closest('.stage').getAttribute('data-lavel');
@@ -42,13 +42,13 @@ function dragDrop(ev) {
         error = 1;
         err_text = "Отсутствует инедтификатор";
     }
-    
+
     if ($(ev.currentTarget).hasClass('stage')) {
         destination = ev.currentTarget;
     } else {
         destination = $(ev.currentTarget).closest('.stage')[0];
     }
-    
+
     var destination_id = destination.getAttribute('data-kot-id');
 
     if (destination_id != ""){
@@ -59,14 +59,14 @@ function dragDrop(ev) {
         error = 2;
         err_text = "Отсутствует инедтификатор приемника";
     }
-    
+
     if ((destination_lavel - parent_lavel) > 1) {
         error = 4;
         err_text = "Задачу можно перемещать только вперед в рамках соседних этапов!";
     }
-     
+
     if (error == 0) {
-        if ($('input[name="user_id"]').val() == '42') {
+        if (($('input[name="user_id"]').val() == '42') || ($('input[name="user_id"]').val() == '453')){
             if (destination_lavel != parent_lavel) {
                 if ((! $.isEmptyObject(object)) && (object == 'project')) {
                     var msg = {
@@ -82,12 +82,12 @@ function dragDrop(ev) {
                         f_sub_name: $('input[name="f_sub_name"]').val(),
                         builder: 'ProjectMove'
                     };
-                    
+
                     g_heap["f_responsible_id"] = $('input[name="f_responsible_id"]').val();
                     g_heap["f_template_id"] = $('input[name="f_template_id"]').val();
                     g_heap["f_code"] = $('input[name="f_code"]').val();
                     g_heap["f_sub_name"] = $('input[name="f_sub_name"]').val();
-                    
+
                 } else {
                     var msg = {
                         action_name: 'SP_CK_Move',
@@ -102,12 +102,12 @@ function dragDrop(ev) {
                         type: type
                     };
                 }
-                
-                    
-    
+
+
+
                 // Send the msg object as a JSON-formatted string.
                 WSSend(msg);
-        
+
                 ShowSnipper();
             }
         }
@@ -115,10 +115,10 @@ function dragDrop(ev) {
     else {
         alert(err_text);
         $(".messenger").addClass("error")
-        $(".messenger").html(err_text); 
-        $(".messenger").fadeIn("slow"); 
+        $(".messenger").html(err_text);
+        $(".messenger").fadeIn("slow");
     }
-    
+
     $('body').css("cursor", "default");
 
     return false;
@@ -150,9 +150,9 @@ function dragOverTeam(ev) {
 function dragDropTeam(ev) {
     var error = 0;
     var err_text;
-    
+
     var source_id = ev.dataTransfer.getData("Text");
-    
+
     if (source_id != ""){
         var user = document.getElementById(source_id);
         var s_lavel = user.getAttribute('data-lavel');
@@ -162,14 +162,14 @@ function dragDropTeam(ev) {
         error = 1;
         err_text = "Отсутствует инедтификатор пользователя";
     }
-    
+
     if (error == 0) {
-    
+
         var destination = $(ev.currentTarget).closest('.destination')[0];
-        
+
         if ($(document).find($(destination)).length > 0) {
             var d_lavel = destination.getAttribute('data-lavel');
-            
+
             if (d_lavel != s_lavel) {
                 var msg = {
                     action_name: "AddUserProjectTeam",
@@ -180,7 +180,7 @@ function dragDropTeam(ev) {
                     user_id: $('input[name="user_id"]').val()
                 };
             }
-        
+
         } else {
 //            var msg = {
 //                action_name: "DeleteUserProjectTeam",
@@ -197,10 +197,10 @@ function dragDropTeam(ev) {
     else {
         alert(err_text);
         $(".messenger").addClass("error")
-        $(".messenger").html(err_text); 
-        $(".messenger").fadeIn("slow"); 
+        $(".messenger").html(err_text);
+        $(".messenger").fadeIn("slow");
     }
-    
+
     $('body').css("cursor", "default");
 
     return false;
@@ -238,9 +238,9 @@ function dragDropExecuter(ev) {
 
     var error = 0;
     var err_text;
-    
+
     var source_id = ev.dataTransfer.getData("Text");
-    
+
     if (source_id != ""){
         var user = document.getElementById(source_id);
         var s_lavel = user.getAttribute('data-lavel');
@@ -251,25 +251,25 @@ function dragDropExecuter(ev) {
         error = 1;
         err_text = "Отсутствует инедтификатор пользователя";
     }
-    
+
     if (error == 0) {
-    
+
         var destination = $(ev.currentTarget).closest('.c-destination')[0];
-        
+
         if ($(document).find($(destination)).length > 0) {
             var d_lavel = destination.getAttribute('data-lavel');
-            
+
             if (d_lavel != s_lavel) {
                 var msg = {
                     action_name: "ProjectAddExecuter",
                     executer_id: executer_id,
-                    executer_name: executer_name, 
+                    executer_name: executer_name,
                     selector: '#place_modal_form .c-destination tbody',
                     builder: 'ProjectAddExecuter',
                     user_id: $('input[name="user_id"]').val()
                 };
             }
-        
+
         } else {
 //            var msg = {
 //                action_name: "DeleteUserProjectTeam",
@@ -286,10 +286,10 @@ function dragDropExecuter(ev) {
     else {
         alert(err_text);
         $(".messenger").addClass("error")
-        $(".messenger").html(err_text); 
-        $(".messenger").fadeIn("slow"); 
+        $(".messenger").html(err_text);
+        $(".messenger").fadeIn("slow");
     }
-    
+
     $('body').css("cursor", "default");
 
     return false;
